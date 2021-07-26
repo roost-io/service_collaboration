@@ -9,7 +9,7 @@ metadata:
 spec:
   containers:
   - name: fetcher
-    image: fetcher:latest
+    image: roost-utility:5002/fetcher:latest
     env:
     - name: STORAGE_DIR
       value: /app-store
@@ -23,7 +23,6 @@ spec:
     ports:
       - name: fetcher-port
         containerPort: 8080
-    imagePullPolicy: Never
   terminationGracePeriodSeconds: 0
   volumes:
   - name: article-storage
