@@ -9,7 +9,7 @@ metadata:
 spec:
   containers:
   - name: retriever
-    image: retriever:latest
+    image: roost-utility:5002/retriever:latest
     env:
     - name: FETCH_SERVICE
       value: fetcher:30047
@@ -20,7 +20,6 @@ spec:
     ports:
       - name: retriever-port
         containerPort: 8081
-    imagePullPolicy: Never
   terminationGracePeriodSeconds: 0
 
 ---
