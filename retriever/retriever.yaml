@@ -9,7 +9,7 @@ metadata:
 spec:
   containers:
   - name: retriever
-    image: roost-utility:5002/retriever:latest
+    image: local-registry:5002/retriever:latest
     env:
     - name: FETCH_SERVICE
       value: fetcher:30047

@@ -9,7 +9,7 @@ metadata:
 spec:
   containers:
   - name: fetcher
-    image: roost-utility:5002/fetcher:latest
+    image: local-registry:5002/fetcher:latest
     env:
     - name: STORAGE_DIR
       value: /app-store
